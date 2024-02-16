@@ -15,7 +15,7 @@
         async function add() {
             let n = document.getElementById("input1").value;
             let m = document.getElementById("input2").value;
-            const res = await fetch("http://localhost:3000/add/" + n + "/" + m);
+            const res = await fetch("http://arithmetic-service-selinazheng9.onrender.com//add/" + n + "/" + m);
             const sum = await res.json();
             document.getElementById("sum").innerHTML = sum;
         }
