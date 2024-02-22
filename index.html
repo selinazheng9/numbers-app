@@ -51,7 +51,7 @@
         async function isPrime() {
             const numberToTest = document.getElementById("numberToTest");            
             let n = numberToTest.value;            
-            const response = await fetch("https://arithmetic-service-selinazheng9.onrender.com/add/" + n);
+            const response = await fetch("https://primes-service-selinazheng9.onrender.com/primes/" + n);
             const result = await response.json();
             document.getElementById("primeCheckResult").innerText = result;
         }
